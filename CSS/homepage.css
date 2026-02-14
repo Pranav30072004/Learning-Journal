@@ -3,6 +3,7 @@
 }
 body {
     margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* ========================
@@ -169,4 +170,41 @@ footer > p {
 /*========================
    SINGLE POST PAGE
 ======================== */
+.expanded-post {
+    display: flex;
+    flex-direction: column;
+    max-width: 43.75em;
+    margin: 0 auto;
+    padding: 1.5em;
 
+    color: #151515;
+}
+
+.expanded-post > h1 {
+    font-size: 1.75rem;
+}
+.expanded-post > img {
+    width: 100%;
+    border-radius: 4px;
+}
+.expanded-post > p {
+    line-height: 1.5;
+}
+.post-body {
+    display: flex;
+    flex-direction: column;
+    color: #151515;
+}
+.post-body > h2 {
+    margin-top: 1em;
+    font-size: 1rem;
+}
+
+.post-body > p {
+    margin-bottom: 1em;
+}
+
+.blog-header {
+    justify-self: center;
+    font-size: 1rem;
+}
