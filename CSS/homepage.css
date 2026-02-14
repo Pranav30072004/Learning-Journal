@@ -208,3 +208,12 @@ footer > p {
     justify-self: center;
     font-size: 1rem;
 }
+
+/*========================
+   ABOUT ME PAGE
+======================== */
+
+.about-me > img {
+    width: 182px;
+    border-radius: 50%;
+}
