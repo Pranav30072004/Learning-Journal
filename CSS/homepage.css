@@ -51,7 +51,7 @@ a {
 
 /*main layout*/
 
-main {
+.blog-posts {
     display: grid;
     gap: 2em;
     padding: 0 1em 2em;
@@ -100,6 +100,7 @@ footer > p {
     background-position: center;
     font-family: "Source Sans Pro", sans-serif;
     color: white;
+    margin-bottom: 2em;
 
 }
 .post-date {
@@ -213,7 +214,55 @@ footer > p {
    ABOUT ME PAGE
 ======================== */
 
-.about-me > img {
+.about-container {
+    padding: 2em;
+}
+
+.about-container > img {
     width: 182px;
     border-radius: 50%;
+}
+
+
+/*========================
+    MEDIA QUERIES
+======================== */
+@media (min-width: 768px) {
+    .blog-posts {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 3em 3em;
+    }
+
+    .hero-post {
+        min-height: 55vh;
+        padding: 3em;
+        background-position: center 75%;
+    }
+    
+    .hero-post > * {
+        max-width: 650px;
+    }
+    .post-title {
+        font-size: 2.5rem;
+    }
+    .blog-title {
+        font-size: 1.75rem;
+    }
+
+    .expanded-post > h1 {
+        font-size: 2.25rem;
+    }
+    .about-container {
+        display: flex;
+        gap: 3em;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2em;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+    }
 }
